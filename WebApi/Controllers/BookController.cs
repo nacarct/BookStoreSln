@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using FluentValidation;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.BookOperations.CreateBook;
 using WebApi.BookOperations.DeleteBook;
@@ -60,6 +62,9 @@ namespace WebApi.Controllers
             
             try
             {
+                GetBookDetailQueryValidator validator = new GetBookDetailQueryValidator();
+                validator.ValidateAndThrow(query);
+                
                 var result = query.Handle();
 
                 return Ok(result);
@@ -78,6 +83,27 @@ namespace WebApi.Controllers
             try
             {
                 command.Model = newBook;
+                CreateBookCommandValidator validator = new CreateBookCommandValidator();
+                
+                /*
+                 ValidationResult result = validator.Validate(command);
+                 if (result.IsValid is false)
+                {
+                    foreach (var fail in result.Errors)
+                    {
+                        Console.WriteLine($"Hata Alanı : {fail.PropertyName} | Hata : {fail.ErrorMessage}");
+                    }
+
+                    return BadRequest("Hatalı alanlar var !");
+                }
+                else
+                {
+                    command.Handle();
+                    return Ok();
+                }*/
+                
+                validator.ValidateAndThrow(command);
+                
                 command.Handle();
                 return Ok();
             }
@@ -94,6 +120,9 @@ namespace WebApi.Controllers
 
             try
             {
+                UpdateBookCommandValidator validator = new UpdateBookCommandValidator();
+                validator.ValidateAndThrow(command);
+                
                 command.Model = updatedBook;
                 command.Handle();
 
@@ -112,6 +141,9 @@ namespace WebApi.Controllers
             
             try
             {
+                DeleteBookCommandValidator validator = new DeleteBookCommandValidator();
+                validator.ValidateAndThrow(command);
+                
                 command.BookId = id;
                 command.Handle();
                 

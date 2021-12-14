@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "23JIZ0v4hrEKCKRpwGbQqzxrthJXOESybrW9SASpt1tZ2zDPvzviI0jv9uobAfOCGirdAkzLtNyb8v9D7PZsHw==",
+  "dgSpecHash": "WXyW9FxC15yMz1D+tI4eg/+kUfx4JqlbENq9KdX0P9b843yq3wYrF/zuNOl0lAj86zfm2pn9ORIS+nGO7y1NzQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\TN\\Pratikler\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\TN\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
+    "C:\\Users\\TN\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.6\\fluentvalidation.aspnetcore.10.3.6.nupkg.sha512",
+    "C:\\Users\\TN\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.6\\fluentvalidation.dependencyinjectionextensions.10.3.6.nupkg.sha512",
     "C:\\Users\\TN\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.12\\microsoft.entityframeworkcore.5.0.12.nupkg.sha512",
     "C:\\Users\\TN\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.12\\microsoft.entityframeworkcore.abstractions.5.0.12.nupkg.sha512",
     "C:\\Users\\TN\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.12\\microsoft.entityframeworkcore.analyzers.5.0.12.nupkg.sha512",
