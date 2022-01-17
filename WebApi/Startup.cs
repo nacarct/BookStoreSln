@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -34,6 +35,8 @@ namespace WebApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Book Store Web Api", Version = "v666" });
             });
+
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
             services.AddDbContext<BookStoreDbContext>(o => o.UseInMemoryDatabase(databaseName: "BookStoreDB"));
         }

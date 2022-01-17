@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TN\\Pratikler\\WebApi\\WebApi.csproj": {}
+    "C:\\Users\\TN\\Source\\Repos\\nacarct\\BookStoreSln\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TN\\Pratikler\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\TN\\Source\\Repos\\nacarct\\BookStoreSln\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TN\\Pratikler\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\TN\\Source\\Repos\\nacarct\\BookStoreSln\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\TN\\Pratikler\\WebApi\\WebApi.csproj",
+        "projectPath": "C:\\Users\\TN\\Source\\Repos\\nacarct\\BookStoreSln\\WebApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\TN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TN\\Pratikler\\WebApi\\obj\\",
+        "outputPath": "C:\\Users\\TN\\Source\\Repos\\nacarct\\BookStoreSln\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
@@ -47,6 +47,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[10.3.6, )"
@@ -82,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }
